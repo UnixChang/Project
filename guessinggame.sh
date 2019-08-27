@@ -10,7 +10,7 @@ nfiles=$(ls -l | grep -v ^[dt] | wc -l)
 
 function ReadResponse {
 	read response
-	while [[ ! $response =~ [0-9]+$ ]]
+	while [[ ! $response =~ ^[0-9]+$ ]]
 	do
 		echo "Enter a non-negative number: "
 	 	read response
