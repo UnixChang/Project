@@ -6,7 +6,7 @@
 #of files in the current directory they should be congratulated. 
 
 
-nfiles=$(ls -l | grep -v ^[dt] | wc -l)
+nfiles=$(ls -A | wc -l)
 
 function ReadResponse {
 	read response
